@@ -152,9 +152,12 @@ home:
     scanf("%d", &num);
 
 
-if(num>=0 && num<=9) {          // If the number is between 0 and 9, print its word representation
-onedigit(num);  }
+if(num == 0) {
+    printf(" Zero "); }    // If the number is 0, print its word representation
 
+
+else if(num>=0 && num<=9) {          // If the number is between 0 and 9, print its word representation
+onedigit(num);  }
 
 else if(num>=11 && num<=19) {   // If the number is between 11 and 19, print its word representation
     teens(num);   }
